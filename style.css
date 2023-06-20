@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: lightgray;
+}
+
+nav {
+    background-color: purple;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px 12px;
+    font-family: monospace;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.game_container {
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* padding: 12px; */
+}
+
+.game_left {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: sans-serif;
+    margin: 0 7%;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 65px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: #f7cfd6d6;
+    cursor: pointer;
+}
+
+.prohibited:hover{
+    cursor: not-allowed;
+}
+
+.allowed:hover{
+    cursor: pointer;
+}
+
+.info_right{
+    font-family: cursive;
+}
+
+#turnbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#turnbtn button{
+    padding: 3px 0px;
+    border: 2px solid gray;
+    background-color: white;
+    font-size: 18px;
+    font-family: system-ui;
+    width: 84px;
+    border-radius: 6px;
+}
+
+#turnbtn button:hover{
+    background-color: #f3f0f0;
+    scale: 0.97;
+    cursor: pointer;
+    border: 2px solid darkgray;
+}
+
+#info{
+    font-size: 18px;
+    margin: 8px 0px;
+}
+
+.victory_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#draw,#win{
+    display: none;
+    /* visibility: hidden; */
+    width: 250px;
+}
+
+.br-0{
+    border-right: none;
+}
+
+.bl-0{
+    border-left: none;
+}
+
+.bt-0{
+    border-top: none;
+}
+
+.bb-0{
+    border-bottom: none;
+}
